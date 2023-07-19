@@ -1,1 +1,1 @@
-# Site contenant des erreurs liées à l'accessibilité numérique.
+# Site sans erreurs d'accessibilité numérique.
