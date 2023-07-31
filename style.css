@@ -35,3 +35,63 @@ h1 {
     padding: 0.5em 1em 0.5em 1em;
     border-radius: 20px;
 }
+
+/* Masque un contenu tout en le laissant à disposition des lecteurs d'écran grâce à un positionnement en dehors de la zone d'affichage. */
+.sr-only {
+    position: fixed;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0; 
+}
+
+.menu-btn {
+    background-color: transparent;
+    display: none;
+}
+
+#block-nav {
+    display: block;
+}
+
+
+/* Responsive */
+@media (max-width: 1410px){
+    .menu-item > a {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1224px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn.active {
+        color: green;
+    }
+
+    .menu-list {
+        display: none;
+    }
+
+    .menu-list.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: red;
+        padding: 10px;
+    }
+
+    .menu-item > a {
+        background-color: transparent;
+        padding: 0.5em 1em 0.5em 1em;
+        border-radius: 0px;
+    }
+}
