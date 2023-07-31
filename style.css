@@ -20,6 +20,12 @@ main > h1 {
     text-decoration: none;
     font-size: 2.5em;
     color: #040073;
+    display: flex;
+    width: 34%;
+}
+
+#accueil > img {
+    margin-right: 10px;
 }
 
 #accueil > img {
@@ -27,14 +33,18 @@ main > h1 {
     top: 0.3em;
 }
 
+#accueil > span {
+    margin-top: 0.4em;
+}
+
 h1 {
     color: #040073;
 }
 
-.nav-menu {
+/* .nav-menu {
     margin-bottom: auto;
     margin-top: auto;
-}
+} */
 
 .menu-list {
     list-style: none;
