@@ -9,10 +9,6 @@ p,li {
     line-height: 2em;
 }
 
-.header {
-    display: flex;
-}
-
 main {
     margin: 8em 8em 4em 8em;
 }
@@ -31,6 +27,24 @@ h3 {
 
 h4 {
     margin-top: 3em;
+}
+
+#rechercher {
+    margin-top: 3em;
+    background-color: aliceblue;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+}
+
+#rechercher > form > input, button {
+    border-radius: 2em;
+}
+
+button {
+    cursor: pointer;
 }
 
 #accueil {

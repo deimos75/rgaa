@@ -10,23 +10,32 @@
 
   <body>  
     <header role="banner" class="header" aria-label="Menu principal">
-      <a href="#" id="accueil" title="Le journal de l'astronomie: Accueil">
-        <img src="./images/m51.jpg" alt="" width="150">
-        <span>Le journal de l'astronomie</span>
-      </a>
-      <nav role="navigation" class="nav-menu">
-        <button class="menu-btn" aria-expanded="false" aria-controls="menu-list" onclick="toggleMenu()">
-          <span aria-hidden="true">&#9776;</span>
-          <span class="sr-only">Menu</span>
-        </button>
+      <div class="flex-between">
+        <a href="#" id="accueil" title="Le journal de l'astronomie: Accueil">
+          <img src="./images/m51.jpg" alt="" width="150">
+          <span>Le journal de l'astronomie</span>
+        </a>
+        <nav role="navigation" class="nav-menu">
+          <button class="menu-btn" aria-expanded="false" aria-controls="menu-list" onclick="toggleMenu()">
+            <span aria-hidden="true">&#9776;</span>
+            <span class="sr-only">Menu</span>
+          </button>
+  
+          <ul class="menu-list" id="menu-list">
+            <li class="menu-item"><a href="#" class="select" title="Le système solaire: Page active">Le système solaire</a></li>
+            <li class="menu-item"><a href="#">Les exoplanètes</a></li>
+            <li class="menu-item"><a href="#">Les galaxies</a></li>
+            <li class="menu-item"><a href="#">Les nébuleuses</a></li>
+          </ul>
+        </nav>
+      </div>
 
-        <ul class="menu-list" id="menu-list">
-          <li class="menu-item"><a href="#" class="select" title="Le système solaire: Page active">Le système solaire</a></li>
-          <li class="menu-item"><a href="#">Les exoplanètes</a></li>
-          <li class="menu-item"><a href="#">Les galaxies</a></li>
-          <li class="menu-item"><a href="#">Les nébuleuses</a></li>
-        </ul>
-      </nav>
+      <div id="rechercher">
+        <form action="">
+          <input type="text" title="Rechercher sur tout le site" placeholder="Rechercher sur tout le site">
+          <button type="submit" title="Faire la recherche">&#128269;</button>
+        </form>
+      </div>
     </header>
 
     <main role="main" id="main">
