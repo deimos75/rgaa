@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Le journal de l'astronomie</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./images/m51-icone.png">
   </head>
 
   <body>  
@@ -32,41 +33,55 @@
       <h1>Le système solaire</h1>
 
       <h2>Un peu d'histoire</h2>
-      <p>
-        L'histoire du système solaire remonte à environ 4,6 milliards d'années. Au début, une vaste nébuleuse de gaz et de poussières s'est contractée 
-        sous l'effet de la gravité, formant un disque protostellaire. Au centre, une protoétoile s'est formée, devenant notre Soleil. Autour de lui, des agrégats 
-        de matière ont commencé à s'assembler, donnant naissance aux planètes, dont la Terre. Ce processus d'accrétion a également conduit à la formation 
-        des lunes, astéroïdes et comètes.
-      </p>
-
-      <p>
-        Au fil du temps, le jeune système solaire a été marqué par des collisions violentes entre les corps célestes en formation, événements qui ont façonné 
-        les orbites et les caractéristiques des planètes. La Terre, par exemple, a subi un impact majeur qui a créé la Lune il y a environ 4,5 milliards d'années.
-      </p>
+      <div class="flex-between">
+        <div id="histoire-texte">
+          <p>
+            L'histoire du système solaire remonte à environ 4,6 milliards d'années. Au début, une vaste nébuleuse de gaz et de poussières s'est contractée 
+            sous l'effet de la gravité, formant un disque protostellaire. Au centre, une protoétoile s'est formée, devenant notre Soleil. Autour de lui, des agrégats 
+            de matière ont commencé à s'assembler, donnant naissance aux planètes, dont la Terre. Ce processus d'accrétion a également conduit à la formation 
+            des lunes, astéroïdes et comètes.
+          </p>
+    
+          <p>
+            Au fil du temps, le jeune système solaire a été marqué par des collisions violentes entre les corps célestes en formation, événements qui ont façonné 
+            les orbites et les caractéristiques des planètes. La Terre, par exemple, a subi un impact majeur qui a créé la Lune il y a environ 4,5 milliards d'années.
+          </p>
+          
+          <p>
+            Depuis lors, le système solaire a connu des périodes de stabilité relative, mais aussi des périodes d'intense activité volcanique et de bombardements 
+            météoritiques. Au cours de ces milliards d'années, les planètes se sont lentement équilibrées, et la vie a émergé sur Terre il y a environ 
+            3,5 milliards d'années.
+          </p>
+          
+          <p>
+            L'observation du ciel a évolué au fil du temps, des observations astronomiques antiques à la révolution copernicienne au XVIe siècle, où Nicolaus 
+            Copernicus a proposé un modèle héliocentrique du système solaire. Cela a été suivi par les découvertes de Johannes Kepler et de Galileo Galilei, 
+            qui ont renforcé notre compréhension de la mécanique céleste.
+          </p>
+          
+          <p>
+            Au XIXe siècle, l'avènement de la théorie de la gravité d'Isaac Newton a fourni une explication solide des mouvements planétaires, et au 
+            XXe siècle, la théorie de la relativité générale d'Albert Einstein a affiné notre compréhension de la gravité.
+          </p>
+          
+          <p>
+            Aujourd'hui, grâce aux missions spatiales et aux avancées technologiques, notre connaissance du système solaire a considérablement augmenté. 
+            Nous continuons d'explorer ses mystères, découvrant de nouvelles lunes, étudiant les conditions sur Mars et les lunes de glace, 
+            et cherchant des signes de vie au-delà de notre planète. L'histoire du système solaire se poursuit, s'enrichissant de nouvelles découvertes 
+            et percées scientifiques.
+          </p>
+        </div>
+        <div id="histoire-image">
+          <img src="./images/venus-galileo.png" alt="Dessin de Galilée représentant les phases de Vénus." width="100%">
+          <p>
+            Dessin de Galilée représentant les phases de Vénus. Pour la première fois on a pu comprendre que les planètes 
+            ressemblaient à la Terre, et donc que la Terre était probablement une planète comme les autres. Ce dessin, 
+            entre autre, a boulversé notre façon de voir l'univers et la place que l'homme y occupe.
+          </p>
+        </div>
+      </div>
       
-      <p>
-        Depuis lors, le système solaire a connu des périodes de stabilité relative, mais aussi des périodes d'intense activité volcanique et de bombardements 
-        météoritiques. Au cours de ces milliards d'années, les planètes se sont lentement équilibrées, et la vie a émergé sur Terre il y a environ 
-        3,5 milliards d'années.
-      </p>
       
-      <p>
-        L'observation du ciel a évolué au fil du temps, des observations astronomiques antiques à la révolution copernicienne au XVIe siècle, où Nicolaus 
-        Copernicus a proposé un modèle héliocentrique du système solaire. Cela a été suivi par les découvertes de Johannes Kepler et de Galileo Galilei, 
-        qui ont renforcé notre compréhension de la mécanique céleste.
-      </p>
-      
-      <p>
-        Au XIXe siècle, l'avènement de la théorie de la gravité d'Isaac Newton a fourni une explication solide des mouvements planétaires, et au 
-        XXe siècle, la théorie de la relativité générale d'Albert Einstein a affiné notre compréhension de la gravité.
-      </p>
-      
-      <p>
-        Aujourd'hui, grâce aux missions spatiales et aux avancées technologiques, notre connaissance du système solaire a considérablement augmenté. 
-        Nous continuons d'explorer ses mystères, découvrant de nouvelles lunes, étudiant les conditions sur Mars et les lunes de glace, 
-        et cherchant des signes de vie au-delà de notre planète. L'histoire du système solaire se poursuit, s'enrichissant de nouvelles découvertes 
-        et percées scientifiques.
-      </p>
       
       <h2>Sa composisition</h2>
       <h3>Les planètes</h3>
@@ -110,7 +125,89 @@
       </ol>
 
       <h3>Les planètes naines et les objets transneptuniens</h3>
+      <h4>Les planètes naines</h4>
+      <p>
+        Les planètes naines, un groupe intrigant d'objets célestes, ajoutent une nuance fascinante à la diversité du système solaire. 
+        Parmi elles, Pluton, découverte en 1930, a longtemps été considérée comme la neuvième planète avant d'être reclassifiée 
+        en 2006. Située au-delà de l'orbite de Neptune, Pluton est accompagnée par Charon, sa lune la plus massive. Éris, une 
+        autre planète naine, a été identifiée en 2005 et a suscité des débats sur la définition des planètes. Ces mondes 
+        lointains, tels que Makemake et Hauméa, apportent un éclairage sur les confins du système solaire et sur les processus 
+        d'accrétion et de formation qui ont façonné notre environnement cosmique. Les missions spatiales, comme celle de la sonde 
+        New Horizons vers Pluton, continuent de révéler des détails intrigants sur ces planètes naines et leur rôle dans la 
+        compréhension de l'évolution du système solaire.
+      </p>
+
+      <h4>Les objets transneptuniens (TNO)</h4>
+      <p>
+        Les objets transneptuniens forment une catégorie intrigante d'entités célestes qui se situent au-delà de l'orbite de 
+        Neptune, la huitième planète du système solaire. Cette région lointaine, connue sous le nom de région transneptunienne, 
+        abrite une variété d'objets fascinants qui offrent des indices clés sur les premières étapes de la formation du système 
+        solaire. Parmi eux, les planètes naines occupent une place particulière. Pluton, découverte en 1930 par Clyde Tombaugh, 
+        a longtemps été considérée comme la neuvième planète jusqu'à ce qu'elle soit reclassifiée en 2006 en raison des critères 
+        redéfinis pour les planètes. Éris, découverte en 2005, a joué un rôle important dans ce processus de reconsidération et 
+        a également été classée comme une planète naine. Makemake et Hauméa, découvertes peu après, enrichissent 
+        également cette catégorie.
+      </p>
+
+      <p>
+        Les objets transneptuniens ne se limitent pas seulement aux planètes naines. Il existe une multitude d'autres petits 
+        corps qui sillonnent cette région éloignée. Les centaures, par exemple, sont des astéroïdes gelés qui ont des orbites 
+        instables entre les régions extérieures des géantes gazeuses et les objets de la ceinture de Kuiper. Cette dernière 
+        est une structure en forme d'anneau située au-delà de Neptune, composée de milliards d'objets glacés et de débris 
+        provenant des débuts du système solaire. L'étude de ces objets transneptuniens fournit des informations cruciales 
+        sur la matière primitive à partir de laquelle les planètes et d'autres corps célestes se sont formés.
+      </p>
+      
+      <p>
+        Bien que les objets transneptuniens soient restés largement inexplorés pendant de nombreuses années en raison de leur 
+        distance et de leur faible luminosité, les missions spatiales récentes ont commencé à lever le voile sur leur nature et 
+        leur composition. La sonde New Horizons, par exemple, a survolé Pluton en 2015, nous fournissant des images détaillées et 
+        des informations sur sa surface, son atmosphère et sa géologie. De plus, la mission OSIRIS-REx s'est rendue à l'astéroïde 
+        Bennu, un objet de la ceinture de Kuiper, pour collecter un échantillon et ainsi mieux comprendre la composition de ces 
+        objets lointains.
+      </p>
+      
+      <p>
+        En explorant les objets transneptuniens, nous gagnons un aperçu crucial de l'histoire du système solaire, de sa formation 
+        à son évolution au fil des milliards d'années. Ces mondes éloignés nous permettent de remonter le temps et de découvrir 
+        des indices sur les conditions qui ont prévalu à l'aube du système solaire, offrant ainsi une perspective plus complète 
+        de notre place dans l'univers.
+      </p>
+
       <h3>Astéroïdes et comètes</h3>
+
+      <div class="flex-between">
+        <div id="comete-texte">
+          <p>
+            Les comètes et les astéroïdes, deux classes d'objets célestes fascinantes, jouent un rôle clé dans la compréhension 
+            de l'histoire et de la dynamique du système solaire. Les comètes, composées de glace, de poussière et de gaz, sont 
+            souvent décrites comme les "boules de neige sales" du cosmos. Originaires principalement de la ceinture de Kuiper 
+            et du nuage d'Oort, situés aux confins du système solaire, elles effectuent des orbites elliptiques autour du Soleil. 
+            Lorsqu'une comète se rapproche du Soleil, la chaleur provoque la sublimation de la glace, libérant des gaz et des 
+            particules qui forment la caractéristique queue lumineuse. Les comètes, telles que la célèbre comète de Halley, 
+            offrent des indices précieux sur la composition des régions extérieures du système solaire et le matériel primordial 
+            à partir duquel les planètes se sont formées.
+          </p>
+    
+          <p>
+            D'un autre côté, les astéroïdes, de petites roches et métaux, peuplent principalement la ceinture d'astéroïdes entre 
+            les orbites de Mars et Jupiter, bien qu'ils soient également présents ailleurs dans le système solaire. Certains astéroïdes sont si 
+            grands qu'ils ont été classés comme planètes naines, comme Cérès. Les astéroïdes sont des témoins des processus de formation 
+            planétaire qui n'ont pas abouti à la création de planètes complètes. Ils ont joué un rôle clé dans l'histoire géologique de 
+            notre système solaire, témoignant des impacts cataclysmiques et des collisions qui ont façonné les planètes et les autres corps 
+            célestes. De plus, les astéroïdes suscitent un intérêt croissant en raison de leur potentiel pour les missions spatiales et 
+            l'exploitation minière, ainsi que pour leur implication potentielle dans les risques d'impact avec la Terre.
+          </p>
+
+        </div>
+        <div id="comete-image">
+          <img src="./images/67P.jpg" alt="Photo de la comète 67P prise par la sonde Rosetta au confin du système solaire." width="100%">
+          <p>
+            Photo de la comète 67P prise par la sonde Rosetta au confin du système solaire. La sonde a survollé la comète suffisament loin du 
+            Soleil afin de l'analyser avant qu'elle ne chauffe trop et que sa glace se transforme en gaz. L'analyse de cette comète a apporté 
+            des réponses fondamentales sur l'origine de l'eau et de la vie sur Terre</p>
+        </div>
+      </div>
       
       <h2>Appréhender sa taille</h2>
 

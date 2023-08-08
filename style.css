@@ -1,6 +1,6 @@
 body {
     margin: 1em 3em 1em 3em;
-    background-color: #c7e5ff;
+    background-color: #ddefff;
     font-family: cursive;
     color: #040073;
 }
@@ -84,6 +84,31 @@ main > h1 {
 
 .nom-planete {
     font-weight: bold;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+#histoire-texte {
+    width: 100%;
+    margin-right: 1em;
+}
+
+#histoire-image {
+    width: 35%;
+    margin-top: 1.5em;
+}
+
+#comete-texte {
+    width: 100%;
+    margin-right: 1em;
+}
+
+#comete-image {
+    width: 75%;
+    margin-top: 1.5em;
 }
 
 /* Responsive */
