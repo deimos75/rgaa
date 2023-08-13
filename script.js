@@ -1,4 +1,4 @@
-/* Menu responsive */
+// Menu responsive
 function toggleMenu() {
     const menuBtn = document.querySelector('.menu-btn');
     const menuList = document.getElementById('menu-list');
@@ -11,3 +11,23 @@ function toggleMenu() {
         menuBtn.classList.add('active');
     }
 }
+
+// Modale
+document.addEventListener("DOMContentLoaded", function() {
+    const ouvrirModalBtn = document.getElementById("ouvrirModalBtn");
+    const modalOverlay = document.getElementById("modalOverlay");
+    const fermerBtn = document.getElementById("fermerBtn");
+    const fermerCroixBtn = document.getElementById("fermerCroixBtn");;
+  
+    ouvrirModalBtn.addEventListener("click", function() {
+      modalOverlay.style.display = "flex";
+    });
+  
+    fermerBtn.addEventListener("click", function() {
+      modalOverlay.style.display = "none";
+    });
+
+    fermerCroixBtn.addEventListener("click", function() {
+        modalOverlay.style.display = "none";
+    });
+});
