@@ -6,6 +6,7 @@
     <title>Le journal de l'astronomie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./images/m51-icone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
   <body>  
@@ -336,8 +337,8 @@
 
     <footer role="contentinfo">
       <div id="footer-form">
+        <h2>Abonnez-vous</h2>
         <p>* Champs obligatoires</p>
-        <h2>Pour vous abonnez c'est par ici!</h2>
         <form>
           <label for="prenom">Prénom*</label>
           <input type="text" name="prenom" id="prenom">
@@ -350,15 +351,26 @@
           <label for="ville">Ville</label>
           <input type="text" name="ville" id="ville">
           <label for="email">Mail*</label>
+          <p id="email-format">Format du mail: nom@mail.com</p>
           <input type="text" name="email" id="email">
-          <button type="submit">Envoyer</button>
+          <button type="submit">S'abonner</button>
         </form>
       </div>
       <div id="footer-autres">
-        <h2>Retrouvez nous sur nos réseaux sociaux</h2>
-        <p>Réseaux ici</p>
+        <h2>Nos réseaux sociaux</h2>
+        <ul id="liste-reseaux">
+          <li><a href="#liste-reseaux" class="fab fa-facebook icone-reseaux"><span class="sr-only">Facebook</span></a></li>
+          <li><a href="#liste-reseaux" class="fab fa-twitter icone-reseaux"><span class="sr-only">Twitter</span></a></li>
+          <li><a href="#liste-reseaux" class="fab fa-instagram icone-reseaux"><span class="sr-only">Instagram</span></a></li>
+        </ul>
         <h2>Liens utiles</h2>
-        <p>Liens ici</p>
+        <ul id="liste-liens-utiles">
+          <li><a href="#liste-liens-utiles">Aide et contact</a></li>
+          <li><a href="#liste-liens-utiles">Plan du site</a></li>
+          <li><a href="#liste-liens-utiles">Protection des données</a></li>
+          <li><a href="#liste-liens-utiles">Mentions légales</a></li>
+          <li><a href="#liste-liens-utiles">Accessibilité: totalement conforme</a></li>
+        </ul>
       </div>
     </footer>
     <script type="text/javascript" src="script.js"></script>

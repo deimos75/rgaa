@@ -5,6 +5,11 @@ body {
     color: #040073;
 }
 
+button {
+    font-family: cursive;
+    font-size: 1em;
+}
+
 header {
     margin: 1em 0 0 0;
 }
@@ -229,7 +234,7 @@ th, td {
 
 footer {
     padding: 1em 8em 2em 8em;
-    background-color: #040073;
+    background-color: #03004d;
     display: flex;
     color: #ddefff;
 }
@@ -253,11 +258,13 @@ footer {
     height: 2em;
     border-radius: 0.5em;
     width: 45%;
+    background-color: #ddefff;
 }
 
 #footer-form > form > textarea {
     border-radius: 0.5em;
     width: 45%;
+    background-color: #ddefff;
 }
 
 #footer-form > form label {
@@ -269,11 +276,39 @@ footer {
     border-radius: 0.5em;
     margin-top: 2em;
     height: 2em;
+    background-color: #ddefff;
 }
 
 #footer-autres {
-    width: 50%;
-    padding-left: 1em;
+    padding-left: 5em;
+}
+
+#liste-reseaux {
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+#liste-reseaux > li {
+    margin-right: 3em;
+}
+
+#liste-reseaux a {
+    text-decoration: none;
+    color: #ddefff;
+}
+
+.icone-reseaux {
+    font-size: 3em;
+}
+
+#liste-liens-utiles {
+    list-style: none;
+    padding-left: 0;
+}
+
+#liste-liens-utiles a {
+    color: #ddefff;
 }
 
 /************************************/

@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const ouvrirModalBtn = document.getElementById("ouvrirModalBtn");
     const modalOverlay = document.getElementById("modalOverlay");
     const fermerBtn = document.getElementById("fermerBtn");
-    const fermerCroixBtn = document.getElementById("fermerCroixBtn");;
+    const fermerCroixBtn = document.getElementById("fermerCroixBtn");
   
     ouvrirModalBtn.addEventListener("click", function() {
       modalOverlay.style.display = "flex";
