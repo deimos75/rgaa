@@ -16,14 +16,14 @@ function toggleMenu() {
 document.addEventListener("DOMContentLoaded", function() {
     const ouvrirModalBtn = document.getElementById("ouvrirModalBtn");
     const modalOverlay = document.getElementById("modalOverlay");
-    const fermerBtn = document.getElementById("fermerBtn");
+    const fermerModalBtn = document.getElementById("fermerModalBtn");
     const fermerCroixBtn = document.getElementById("fermerCroixBtn");
   
     ouvrirModalBtn.addEventListener("click", function() {
       modalOverlay.style.display = "flex";
     });
   
-    fermerBtn.addEventListener("click", function() {
+    fermerModalBtn.addEventListener("click", function() {
       modalOverlay.style.display = "none";
     });
 

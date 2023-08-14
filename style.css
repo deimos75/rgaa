@@ -26,6 +26,10 @@ main {
     margin: 8em 8em 4em 8em;
 }
 
+figure {
+    margin: 0;
+}
+
 main > h1 {
     text-align: center;
 }
@@ -237,7 +241,12 @@ caption {
 }
 
 #echelle-distance {
-    padding-right: 6em;
+    padding-right: 4em;
+    width: 100%;
+}
+
+#comparaison-taille {
+    width: 100%;
 }
 
 footer {
