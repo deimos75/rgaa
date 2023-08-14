@@ -10,7 +10,7 @@
 
   <body>  
     <header role="banner" class="header" aria-label="Menu principal">
-      <div class="flex-between">
+      <div class="flex-between header-contenu">
         <a href="#" id="accueil" title="Le journal de l'astronomie: Accueil">
           <img src="./images/m51.jpg" alt="" width="150">
           <span>Le journal de l'astronomie</span>
@@ -327,14 +327,40 @@
 
       <h3>Mise à l'échelle</h3>
       <p>
-        Si on met à l'échelle le Soleil à la même taille qu'un de ballon de basket (24 centimètre de diamètre).
+        Si on mettait à l'échelle le Soleil à la même taille qu'un de ballon de basket (24 centimètre de diamètre).
         Alors la Terre aurait un diamètre de 2,2 millimètres et serait à 25 mètres du Soleil.
         Neptune serait à 775 mètres. Le nuage d'Oort commencerait à 50 kilomètres et se terminerait à 2500 kilomètres du Soleil!
         Même si on réduisait le Soleil à la taille d'un ballon de basket on n'arriverait pas à sortir du système solaire à pied!
       </p>
     </main>
 
-    <footer role="contentinfo"></footer>
+    <footer role="contentinfo">
+      <div id="footer-form">
+        <p>* Champs obligatoires</p>
+        <h2>Pour vous abonnez c'est par ici!</h2>
+        <form>
+          <label for="prenom">Prénom*</label>
+          <input type="text" name="prenom" id="prenom">
+          <label for="nom">Nom*</label>
+          <input type="text" name="nom" id="nom">
+          <label for="adresse">Adresse</label>
+          <textarea name="adresse" id="adresse" cols="30" rows="3"></textarea>
+          <label for="codePostal">Code postal</label>
+          <input type="text" name="codePostal" id="codePostal">
+          <label for="ville">Ville</label>
+          <input type="text" name="ville" id="ville">
+          <label for="email">Mail*</label>
+          <input type="text" name="email" id="email">
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+      <div id="footer-autres">
+        <h2>Retrouvez nous sur nos réseaux sociaux</h2>
+        <p>Réseaux ici</p>
+        <h2>Liens utiles</h2>
+        <p>Liens ici</p>
+      </div>
+    </footer>
     <script type="text/javascript" src="script.js"></script>
   </body>
 </html>
