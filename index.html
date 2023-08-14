@@ -249,7 +249,7 @@
 
       <h3>Les distances dans le système solaire</h3>
       <table role="table" aria-label="Résultats de ventes par trimestre">
-        <caption>Distance des objets du système solaire par rapport au Soleil</caption>
+        <caption>Distance et temps entre le Soleil et les objets du système solaire</caption>
         <thead>
           <tr>
               <th scope="col">Objets</th>
@@ -314,7 +314,7 @@
             <td>de 510 ans à 850 ans</td>
           </tr>
           <tr>
-            <th scope="row">Nuage d'Oort (début)</th>
+            <th scope="row">Nuage d'Oort</th>
             <td>de 2000 à 100000</td>
             <td>de 11,5 jours à 1 an et 7 mois</td>
             <td>de 34000 ans à 1 millions 700 000 ans </td>
@@ -327,12 +327,15 @@
       </p>
 
       <h3>Mise à l'échelle</h3>
-      <p>
-        Si on mettait à l'échelle le Soleil à la même taille qu'un de ballon de basket (24 centimètre de diamètre).
-        Alors la Terre aurait un diamètre de 2,2 millimètres et serait à 25 mètres du Soleil.
-        Neptune serait à 775 mètres. Le nuage d'Oort commencerait à 50 kilomètres et se terminerait à 2500 kilomètres du Soleil!
-        Même si on réduisait le Soleil à la taille d'un ballon de basket on n'arriverait pas à sortir du système solaire à pied!
-      </p>
+      <div class="flex-between">
+        <p id="echelle-distance">
+          Si on mettait à l'échelle le Soleil à la même taille qu'un de ballon de basket (24 centimètre de diamètre).
+          Alors la Terre aurait un diamètre de 2,2 millimètres et serait à 25 mètres du Soleil.
+          Neptune serait à 775 mètres. Le nuage d'Oort commencerait à 50 kilomètres et se terminerait à 2500 kilomètres du Soleil!
+          Même si on réduisait le Soleil à la taille d'un ballon de basket on n'arriverait pas à sortir du système solaire à pied!
+        </p>
+        <img src="./images/echelle-taille.jpg" alt="Comparaison à la bonne échelle entre les différentes planètes et le Soleil" width="48%;">
+      </div>
     </main>
 
     <footer role="contentinfo">
@@ -345,7 +348,7 @@
           <label for="nom">Nom*</label>
           <input type="text" name="nom" id="nom">
           <label for="adresse">Adresse</label>
-          <textarea name="adresse" id="adresse" cols="30" rows="3"></textarea>
+          <textarea name="adresse" id="adresse"></textarea>
           <label for="codePostal">Code postal</label>
           <input type="text" name="codePostal" id="codePostal">
           <label for="ville">Ville</label>

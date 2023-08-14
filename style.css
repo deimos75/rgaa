@@ -43,7 +43,7 @@ h4 {
 }
 
 #rechercher {
-    margin: 3em 0 0 0;
+    margin: 3em 1em 0 1em;
     background-color: aliceblue;
     height: 3em;
     display: flex;
@@ -57,7 +57,6 @@ h4 {
     border-radius: 2em;
     height: 2em;
 }
-
 
 button {
     cursor: pointer;
@@ -232,6 +231,15 @@ th, td {
     text-align: left;
 }
 
+caption {
+    margin-bottom: 1em;
+    font-weight: 600;
+}
+
+#echelle-distance {
+    padding-right: 6em;
+}
+
 footer {
     padding: 1em 8em 2em 8em;
     background-color: #03004d;
@@ -262,6 +270,7 @@ footer {
 }
 
 #footer-form > form > textarea {
+    height: 3em;
     border-radius: 0.5em;
     width: 45%;
     background-color: #ddefff;
@@ -271,8 +280,12 @@ footer {
     margin-top: 1em;
 }
 
+#email-format {
+    margin: 0;
+}
+
 #footer-form > form > button {
-    width: 20%;
+    width: 10em;
     border-radius: 0.5em;
     margin-top: 2em;
     height: 2em;
@@ -321,6 +334,27 @@ footer {
 }
 
 @media (max-width: 1375px) {
+    main {
+        margin: 8em 1em 4em 1em;
+    }
+
+    .header-contenu {
+        margin: 0 2em 0 2em;
+    }
+
+    #accueil {
+        width: 85%;
+    }
+
+    footer {
+        padding: 1em 2em 2em 2em;
+    }
+
+    #footer-form > form input, 
+    #footer-form > form textarea {
+        width: 60%;
+    }
+
     .menu-btn {
         display: block;
     }
