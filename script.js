@@ -31,3 +31,45 @@ document.addEventListener("DOMContentLoaded", function() {
         modalOverlay.style.display = "none";
     });
 });
+
+// Gestion des erreurs dans le formulaire
+const abonnerBtn = document.getElementById('abonner-btn');
+const prenomInput = document.getElementById('prenom');
+const prenomErreur = document.getElementById('prenom-erreur');
+const nomInput = document.getElementById('nom');
+const nomErreur = document.getElementById('nom-erreur');
+const emailInput = document.getElementById('email');
+const emailErreurObligatoire = document.getElementById('email-erreur-obligatoire');
+const emailErreurFormat = document.getElementById('email-erreur-format');
+abonnerBtn.addEventListener('click', abonner);
+
+function abonner(event) {
+    // Permet d'éviter que le navigateur recharge la page et qu'il affiche ses propres messages d'erreur
+    event.preventDefault();
+    if (prenomInput.value.trim() === '') {
+        prenomErreur.style.display = 'block';
+    } else {
+        prenomErreur.style.display = 'none';
+    }
+
+    if (nomInput.value.trim() === '') {
+        nomErreur.style.display = 'block';
+    } else {
+        nomErreur.style.display = 'none';
+    }
+
+    if (emailInput.value.trim() === '') {
+        emailErreurObligatoire.style.display = 'block';
+    } else {
+        emailErreurObligatoire.style.display = 'none';
+        if (verifierEmail(emailInput.value.trim())) {
+            emailErreurFormat.style.display = 'none';
+        } else {
+            emailErreurFormat.style.display = 'block';
+        }
+    }
+}
+
+function verifierEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);;
+}

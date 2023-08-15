@@ -357,26 +357,32 @@
     </main>
 
     <footer role="contentinfo">
+
       <div id="footer-form">
         <h2>Abonnez-vous</h2>
         <p>* Champs obligatoires</p>
-        <form>
-          <label for="prenom">Prénom*</label>
-          <input type="text" name="prenom" id="prenom">
-          <label for="nom">Nom*</label>
-          <input type="text" name="nom" id="nom">
+        <form method="post" id="abonner-form">
+          <label for="prenom">Prénom *</label>
+          <input type="text" name="prenom" id="prenom" required aria-required="true" autocomplete="given-name">
+          <p id="prenom-erreur" class="erreur-form">Le prénom est obligatoire</p>
+          <label for="nom">Nom *</label>
+          <input type="text" name="nom" id="nom" required aria-required="true" autocomplete="name">
+          <p id="nom-erreur" class="erreur-form">Le nom est obligatoire</p>
           <label for="adresse">Adresse</label>
-          <textarea name="adresse" id="adresse"></textarea>
+          <textarea name="adresse" id="adresse" autocomplete="street-address"></textarea>
           <label for="codePostal">Code postal</label>
-          <input type="text" name="codePostal" id="codePostal">
+          <input type="text" name="codePostal" id="codePostal" autocomplete="postal-code">
           <label for="ville">Ville</label>
-          <input type="text" name="ville" id="ville">
-          <label for="email">Mail*</label>
-          <p id="email-format">Format du mail: nom@mail.com</p>
-          <input type="text" name="email" id="email">
-          <button type="submit">S'abonner</button>
+          <input type="text" name="ville" id="ville" autocomplete="address-level2">
+          <label for="email">Mail *</label>
+          <p id="email-format">Format de l'email: nom@mail.com</p>
+          <input type="text" name="email" id="email" required aria-required="true" autocomplete="email">
+          <p id="email-erreur-obligatoire" class="erreur-form">L'email est obligatoire</p>
+          <p id="email-erreur-format" class="erreur-form">L'email n'est pas au bon format (nom@mail.com)</p>
+          <button id="abonner-btn" type="submit" title="S'abonner au magazine">S'abonner</button>
         </form>
       </div>
+
       <div id="footer-autres">
         <h2>Nos réseaux sociaux</h2>
         <ul id="liste-reseaux">
