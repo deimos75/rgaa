@@ -2,7 +2,7 @@
 function toggleMenu() {
     const menuBtn = document.querySelector('.menu-btn');
     const menuList = document.getElementById('menu-list');
-    
+
     if (menuList.classList.contains('active')) {
         menuList.classList.remove('active');
         menuBtn.classList.remove('active');
@@ -13,22 +13,26 @@ function toggleMenu() {
 }
 
 // Modale
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const ouvrirModalBtn = document.getElementById("ouvrirModalBtn");
     const modalOverlay = document.getElementById("modalOverlay");
     const fermerModalBtn = document.getElementById("fermerModalBtn");
     const fermerCroixBtn = document.getElementById("fermerCroixBtn");
-  
-    ouvrirModalBtn.addEventListener("click", function() {
-      modalOverlay.style.display = "flex";
-    });
-  
-    fermerModalBtn.addEventListener("click", function() {
-      modalOverlay.style.display = "none";
+    const modalOort = document.getElementById('modal-oort');
+
+    ouvrirModalBtn.addEventListener("click", function () {
+        modalOort.focus();                      // Positionnement du focus sur la modale
+        modalOverlay.style.display = "flex";
     });
 
-    fermerCroixBtn.addEventListener("click", function() {
+    fermerModalBtn.addEventListener("click", function () {
         modalOverlay.style.display = "none";
+        ouvrirModalBtn.focus();                   // Positionnement du focus sur le bouton d'ouverture
+    });
+
+    fermerCroixBtn.addEventListener("click", function () {
+        modalOverlay.style.display = "none";
+        ouvrirModalBtn.focus();                 // Positionnement du focus sur le bouton d'ouverture
     });
 });
 

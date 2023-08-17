@@ -17,7 +17,7 @@
           <span>Le journal de l'astronomie</span>
         </a>
         <nav role="navigation" class="nav-menu">
-          <button class="menu-btn" aria-expanded="false" aria-controls="menu-list" onclick="toggleMenu()">
+          <button type="button" class="menu-btn" aria-expanded="false" aria-controls="menu-list" onclick="toggleMenu()">
             <span aria-hidden="true">&#9776;</span>
             <span class="sr-only">Menu</span>
           </button>
@@ -231,11 +231,13 @@
       </div>
       
       <div>
-        <button id="ouvrirModalBtn">Nuage d'Oort (plus d'infos)</button>
+        <button type="button" id="ouvrirModalBtn">Nuage d'Oort (plus d'infos)</button>
         <div class="modal-overlay" id="modalOverlay">
-          <div class="modal">
+          <div class="modal" id="modal-oort">
             <h1>Le nuage d'Oort</h1>
-            <button class="icone-croix" id="fermerCroixBtn" aria-label="Fermer la modale">&#x2716;</button>
+            <button type="button" class="icone-croix" id="fermerCroixBtn" aria-label="Fermer la modale">
+              <span class="sr-only">Fermer</span><span aria-hidden="true">&#x2716;</span>
+            </button>
             <p>
               Le nuage d'Oort, une vaste région située aux confins du système solaire, abrite une multitude 
               de comètes glacées et de corps célestes. Il est nommé d'après l'astronome Jan Oort, qui 
@@ -255,7 +257,7 @@
               <img src="./images/oort.png" alt="Réprésentation du nuage d'Oort" width="100%">
               <figcaption>Fig. 5. Réprésentation du nuage d'Oort qui entoure le système solaire.</figcaption>
             </figure>
-            <button id="fermerModalBtn">Fermer</button>
+            <button type="button" id="fermerModalBtn">Fermer</button>
           </div>
         </div>
       </div>
