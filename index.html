@@ -386,6 +386,16 @@
           <input type="text" name="email" id="email" required aria-required="true" autocomplete="email">
           <p id="email-erreur-obligatoire" class="erreur-form">L'email est obligatoire</p>
           <p id="email-erreur-format" class="erreur-form">L'email n'est pas au bon format (nom@mail.com)</p>
+          <fieldset>
+            <legend>Durée de l'abonnement *:</legend>
+            <input type="radio" id="six-mois" name="duree" required aria-required="true">
+            <label for="six-mois">6 mois (-20%)</label>
+            <input type="radio" id="un-an" name="duree">
+            <label for="un-an">1 an (-40%)</label>
+            <input type="radio" id="deux-an" name="duree">
+            <label for="deux-an">2 ans (-60%)</label>
+            <p id="duree-erreur" class="erreur-form">La durée d'abonnement est obligatoire</p>
+          </fieldset>
           <button id="abonner-btn" type="submit" title="S'abonner au magazine">S'abonner</button>
         </form>
       </div>

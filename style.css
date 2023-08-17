@@ -357,6 +357,31 @@ footer {
     opacity: 0.5;
 }
 
+fieldset {
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+fieldset>legend {
+    padding-top: 1em;
+}
+
+fieldset {
+    display: inline-block;
+}
+
+#footer-form>form input[type="radio"] {
+    width: 1em;
+}
+
+#footer-form>form>fieldset label {
+    position: relative;
+    bottom: 0.5em;
+    margin-right: 3%;
+}
+
 /************************************/
 /************ Responsive ************/
 /************************************/

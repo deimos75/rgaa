@@ -38,18 +38,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Gestion des erreurs dans le formulaire
 const abonnerBtn = document.getElementById('abonner-btn');
-const prenomInput = document.getElementById('prenom');
-const prenomErreur = document.getElementById('prenom-erreur');
-const nomInput = document.getElementById('nom');
-const nomErreur = document.getElementById('nom-erreur');
-const emailInput = document.getElementById('email');
-const emailErreurObligatoire = document.getElementById('email-erreur-obligatoire');
-const emailErreurFormat = document.getElementById('email-erreur-format');
 abonnerBtn.addEventListener('click', abonner);
 
 function abonner(event) {
     // Permet d'éviter que le navigateur recharge la page et qu'il affiche ses propres messages d'erreur
     event.preventDefault();
+
+    const prenomInput = document.getElementById('prenom');
+    const prenomErreur = document.getElementById('prenom-erreur');
+    const nomInput = document.getElementById('nom');
+    const nomErreur = document.getElementById('nom-erreur');
+    const emailInput = document.getElementById('email');
+    const emailErreurObligatoire = document.getElementById('email-erreur-obligatoire');
+    const emailErreurFormat = document.getElementById('email-erreur-format');
+    const dureeInput = document.getElementsByName('duree');
+    const dureeErreur = document.getElementById('duree-erreur');
+
     if (prenomInput.value.trim() === '') {
         prenomErreur.style.display = 'block';
     } else {
@@ -72,6 +76,10 @@ function abonner(event) {
             emailErreurFormat.style.display = 'block';
         }
     }
+
+    const choix = Array.from(dureeInput).filter(duree => duree.checked);
+    choix.length == 0 ? dureeErreur.style.display = 'block' : dureeErreur.style.display = 'none';
+
 }
 
 function verifierEmail(email) {
