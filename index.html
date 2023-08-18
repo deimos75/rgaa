@@ -371,10 +371,10 @@
         <form method="post" id="abonner-form">
           <label for="prenom">Prénom *</label>
           <input type="text" name="prenom" id="prenom" required aria-required="true" autocomplete="given-name">
-          <p id="prenom-erreur" class="erreur-form">Le prénom est obligatoire</p>
+          <p id="prenom-erreur-obligatoire" class="erreur-form">Le prénom est obligatoire</p>
           <label for="nom">Nom *</label>
           <input type="text" name="nom" id="nom" required aria-required="true" autocomplete="name">
-          <p id="nom-erreur" class="erreur-form">Le nom est obligatoire</p>
+          <p id="nom-erreur-obligatoire" class="erreur-form">Le nom est obligatoire</p>
           <label for="adresse">Adresse</label>
           <textarea name="adresse" id="adresse" autocomplete="street-address"></textarea>
           <label for="codePostal">Code postal</label>
@@ -394,9 +394,10 @@
             <label for="un-an">1 an (-40%)</label>
             <input type="radio" id="deux-an" name="duree">
             <label for="deux-an">2 ans (-60%)</label>
-            <p id="duree-erreur" class="erreur-form">La durée d'abonnement est obligatoire</p>
+            <p id="duree-erreur-obligatoire" class="erreur-form">La durée d'abonnement est obligatoire</p>
           </fieldset>
           <button id="abonner-btn" type="submit" title="S'abonner au magazine">S'abonner</button>
+          <p id="message-validation" aria-hidden="true"></p>
         </form>
       </div>
 
