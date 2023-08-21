@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   </head>
 
-  <body>  
+  <body>
+    <nav role="navigation" aria-label="Accès rapide vers le contenu principal">
+      <a href="#main" class="skiplink">Contenu principal</a>
+    </nav>
     <header role="banner" class="header" aria-label="Menu principal">
       <div class="flex-between header-contenu">
         <a href="#" id="accueil" title="Le journal de l'astronomie: Accueil">
@@ -39,7 +42,7 @@
       </div>
     </header>
 
-    <main role="main" id="main">
+    <main role="main" id="main" tabindex="-1">
       <h1>Le système solaire</h1>
 
       <h2>Un peu d'histoire</h2>

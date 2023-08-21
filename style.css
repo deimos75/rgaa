@@ -115,7 +115,8 @@ button:hover {
 }
 
 /* Masque un contenu tout en le laissant à disposition des lecteurs d'écran grâce à un positionnement en dehors de la zone d'affichage. */
-.sr-only {
+.sr-only,
+.skiplink:not(:focus) {
     position: fixed;
     width: 1px;
     height: 1px;
